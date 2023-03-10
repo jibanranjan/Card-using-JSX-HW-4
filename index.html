@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0; 
+        }
+    </style>
+</head>
+<body style="background-color: blueviolet;">
+    <div id="root"></div>
+    <script type="text/babel">
+
+
+                             // all styles
+        
+                                 var mainCardDivStyle = {
+                                    width:"400px",
+                                    height:"450px",
+                                    backgroundColor:"white",
+                                    marginTop: "120px",
+                                    marginLeft: "500px"
+                                 }
+
+                                 var cardDpStyle ={
+                                    width: "130px",
+                                    height: "130px",
+                                    borderRadius:"50%",
+                                    marginLeft:"130px",
+                                    marginTop:"30px"
+                                 }
+
+                                 var CardNameh1 ={
+                                                 fontFamily:"Verdana", 
+                                                 color:"rgb(111,111,111)",
+                                                 marginLeft:"72px",
+                                                 marginTop:"20px",
+                                                 fontSize:"22px"
+                                 }
+                                
+                                 var cardPara ={
+                                                fontFamily:"Garamond",
+                                                color:"rgb(128,128,128)",
+                                                marginLeft:"72px",
+                                                marginTop:"5px",
+                                                fontSize:"17px"
+                                 }
+
+                                 var countNo = {
+                                                color:"rgb(155,69,228)",
+                                                display:"flex",
+                                                gap:"70px",
+                                                marginLeft:"40px",
+                                                marginTop:"20px",
+                                                // fontWeight:"5"
+                                             }
+                                
+
+                                var flwrPara = {
+                                     display:"flex",
+                                                gap:"50px",
+                                                marginLeft:"38px",
+                                                marginTop:"2px",
+                                                fontFamily:"Garamond",
+                                                color:"rgb(128,128,128)"
+                                          
+                                }
+
+
+                                var btndiv = {
+                                              display:"flex",
+                                              gap:"40px",
+                                              marginLeft:"38px",
+                                              marginTop:"60px"
+                                            
+                                }
+
+                                var btn1 ={    height:"50px", 
+                                              width:"140px",
+                                              backgroundColor:"rgb(155,69,228)", 
+                                              color:"white",
+                                              fontSize:"18px",
+                                              border:"none", 
+                                              borderRadius:"10px",
+                                              cursor:"pointer"
+
+                                }
+
+
+                                var btn2 ={   height:"50px", 
+                                              width:"140px",
+                                              backgroundColor:"rgb(225,58,157)", 
+                                              color:"white",
+                                              fontSize:"18px",
+                                              border:"none", 
+                                              borderRadius:"10px",
+                                              cursor:"pointer"
+
+                                }
+
+                                var dot = {      height:"12px",
+                                                 width:"12px",
+                                                 backgroundColor:"rgb(4,170,109)",
+                                                 borderRadius:"50%",
+                                                 boxShadow:" 0 0 5px 5px white",
+                                                 marginTop:"-280px",
+                                                 marginLeft:"236px"
+
+                                }
+
+
+
+
+
+
+
+                   //all div
+
+
+  var mainCardDiv = <div style={mainCardDivStyle}>
+
+                <div>
+                <img style={cardDpStyle} src="https://pbs.twimg.com/profile_images/1577734013200248833/yyB1Ga8H_400x400.jpg" alt=""/>
+                <h1 style={CardNameh1}>Jibanranjan Debata</h1>
+                <p style={cardPara}>I enjoy to listening music every day</p>
+            </div>
+
+                <div style={countNo}>
+                <h1>189</h1>
+                <h1>8765</h1>
+                <h1>225</h1>
+            </div>
+
+                <div style={flwrPara}>
+                    <p> POSTS </p>
+                    <p>FOLLOWERS</p>
+                    <p>FOLLOWING</p>
+                </div>
+
+               <div style={btndiv}>
+                <button style={btn1}>FOLLOW</button>
+                <button style={btn2}>MESSAGE</button>
+                </div> 
+            <div style={dot}>
+                
+            </div>
+
+        
+        </div>
+
+ReactDOM.render(mainCardDiv, document.getElementById('root'))
+
+
+    </script>
+</body>
+</html>
